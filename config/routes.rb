@@ -1,3 +1,6 @@
+# frozen_string_literal: true
+
 Rails.application.routes.draw do
-  resources :users, only: [:index, :show]
+  root 'home#index'
+  resources :users, only: %i[index show]
 end

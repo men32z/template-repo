@@ -1,5 +1,8 @@
 #!/usr/bin/env ruby
+# frozen_string_literal: true
+
 require 'fileutils'
+# rubocop:disable Style/MixinUsage, Lint/MissingCopEnableDirective
 include FileUtils
 
 # path to your application root.

@@ -1,8 +1,8 @@
+# Handle all users pages and realted.
 class UsersController < ApplicationController
-  def index
-  end
+  def index; end
 
   def show
-    @name = "James"
+    @name = 'James'
   end
 end
