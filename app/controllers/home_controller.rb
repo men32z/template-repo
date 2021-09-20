@@ -4,9 +4,9 @@ class HomeController < ActionController::Base
     render 'layouts/application'
   end
 
-  # runs the worker for now. 
+  # runs the worker for now.
   def test
-    UsersWorker.perform_async()
+    UsersWorker.perform_async
     render '/test'
   end
 end

@@ -4,10 +4,10 @@ RSpec.describe User, type: :model do
   let(:valid_user) do
     {
       id: 1,
-      first_name: "Mike",
-      last_name: "Wazowski",
-      email: 'mike@monstersinc.com' ,
-      status_id: 1, # status are seeded.
+      first_name: 'Mike',
+      last_name: 'Wazowski',
+      email: 'mike@monstersinc.com',
+      status_id: 1 # status are seeded.
     }
   end
 
@@ -50,7 +50,7 @@ RSpec.describe User, type: :model do
 
   it 'is not valid with email length > 255' do
     new_user = User.new(valid_user)
-    new_user.email = ('a' * 246) + '@gmail.com'
+    new_user.email = "#{'a' * 246}@gmail.com"
     expect(new_user).to_not be_valid
   end
 
