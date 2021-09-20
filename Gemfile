@@ -18,6 +18,8 @@ gem 'sidekiq'
 gem 'turbolinks', '~> 5'
 gem 'typhoeus'
 gem 'uglifier', '>= 1.3.0'
+gem 'kaminari'
+gem 'bootstrap', '~> 4.3.1'
 
 group :development, :test do
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
@@ -37,6 +39,7 @@ group :test do
   gem 'rspec-rails', '~> 3.8'
   gem 'selenium-webdriver'
   gem 'webdrivers'
+  gem 'shoulda-matchers', '~> 3.1'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem

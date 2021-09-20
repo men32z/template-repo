@@ -6,3 +6,9 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+begin
+  UserStatus.create({id: 1, name:'active'})
+  UserStatus.create({id: 2, name:'inactive'})
+rescue ActiveRecord::RecordNotUnique
+  # this is ok, somehow they were seeded before.
+end
