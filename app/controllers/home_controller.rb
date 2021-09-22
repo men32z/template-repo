@@ -6,6 +6,7 @@ class HomeController < ActionController::Base
 
   # runs the worker for now.
   def test
+    # we could also send startign page(10 users will be loaded per page).
     UsersWorker.perform_async
     render '/test'
   end

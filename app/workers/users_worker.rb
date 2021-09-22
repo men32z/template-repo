@@ -2,17 +2,9 @@
 class UsersWorker
   include Sidekiq::Worker
 
-  def perform(*)
-    # url = 'https://microverse-api-app.herokuapp.com/users?limit=10'
-    url = 'http://localhost:3005/users'
-    response = RestClient.get url, { Authorization: 'Bearer secret' }
-
-    users = JSON.parse(response.body, symbolize_names: true)
-
-    users.each do |x|
-      User.create(name: x[:name])
-    end
-  rescue StandardError
-    puts 'error'
+  def perform(page = 0)
+    new_users = UserLoader::Microverse.call({ limit: 10, offset: page * 10 })
+    # we could use dealy depending on what are we looking for.
+    UsersWorker.perform_async(page + 1) if new_users && new_users.length > 1
   end
 end
