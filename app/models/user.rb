@@ -8,6 +8,9 @@ class User < ApplicationRecord
   validates :email, presence: true, length: { maximum: 255 }, format: { with: VALID_EMAIL_REGEX },
                     uniqueness: { case_sensitive: false }
 
+  scope :where_status, ->(status) { where(status_id: status) if status.present? && status.to_i.positive? }
+  default_scope { order('id DESC') }
+
   def fullname
     "#{first_name} #{last_name}"
   end

@@ -2,12 +2,12 @@
 class UsersController < ApplicationController
   def index
     page = params[:page].blank? ? 1 : params[:page]
-    @params = {}
-    @users = User.page(page).per(3).order(:id)
-    return if params[:active].blank?
+    @params = { status: params[:status] }
 
-    @users = @users.where(status_id: params[:active])
-    @params[:active] = params[:active]
+    @status = UserStatus.all.collect { |a| [a.name.capitalize, users_path({ status: a.id })] }
+    @status.unshift ['All', users_path({ status: 0 })]
+
+    @users = User.page(page).where_status(params[:status]).per(10).order(:id)
   end
 
   def show

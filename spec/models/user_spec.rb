@@ -6,7 +6,7 @@ RSpec.describe User, type: :model do
       id: 1,
       first_name: 'Mike',
       last_name: 'Wazowski',
-      email: 'mike@monstersinc.com',
+      email: 'mikeunique@monstersinc.com',
       status_id: 1 # status are seeded.
     }
   end
