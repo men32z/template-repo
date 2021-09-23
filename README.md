@@ -17,10 +17,14 @@
 ## Live Demo
 ### Worker test
 
-worker will run on the page [https://men32z-template-repo.herokuapp.com/test](https://men32z-template-repo.herokuapp.com/test)
-
-
+run the
 [Live Demo Link](https://men32z-template-repo.herokuapp.com/users)
+first, this will load an empty page. after that you can run the worker.
+
+worker will run on the page [https://men32z-template-repo.herokuapp.com/test](https://men32z-template-repo.herokuapp.com/test)
+- this will only run once, will implement something to refresh later. see Upcoming Features? section below.
+
+
 
 ## Local Install
 
