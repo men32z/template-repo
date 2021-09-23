@@ -20,7 +20,7 @@
 worker will run on the page [https://men32z-template-repo.herokuapp.com/test](https://men32z-template-repo.herokuapp.com/test)
 
 
-[Live Demo Link](https://men32z-template-repo.herokuapp.com/)
+[Live Demo Link](https://men32z-template-repo.herokuapp.com/users)
 
 ## Local Install
 
@@ -42,6 +42,16 @@ bundle install --without production
 rails db:migrate
 rails db:seed
 ```
+as a requirement for workers you must have a redis server installed.
+
+```
+# on mac
+brew install redis
+# on linux
+sudo apt-get install redis-server
+```
+
+you must configure an .env file. you can find the example at .env.example
 
 4. run rails server
 
