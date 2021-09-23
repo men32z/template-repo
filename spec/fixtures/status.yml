@@ -1,0 +1,6 @@
+active:
+  id: 1
+  name: active
+inactive:
+  id: 2
+  name: inactive

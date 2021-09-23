@@ -4,10 +4,12 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 ruby '2.7.4'
 
 gem 'bootsnap', '>= 1.1.0', require: false
+gem 'bootstrap', '~> 4.3.1'
 gem 'coffee-rails', '~> 4.2'
 gem 'dotenv'
 gem 'dotenv-rails', groups: %i[development test]
 gem 'jbuilder', '~> 2.5'
+gem 'kaminari'
 gem 'pg'
 gem 'puma', '~> 3.11'
 gem 'rails', '~> 5.2.3'
@@ -36,7 +38,9 @@ group :test do
   gem 'factory_bot'
   gem 'rspec-rails', '~> 3.8'
   gem 'selenium-webdriver'
+  gem 'shoulda-matchers', '~> 3.1'
   gem 'webdrivers'
+  gem 'webmock'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem

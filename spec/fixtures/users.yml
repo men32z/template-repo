@@ -1,0 +1,40 @@
+mike:
+ first_name: 'Mike'
+ last_name: 'Wazowski'
+ email: 'mike@monstersinc.com'
+ status_id: 1
+sully:
+ first_name: 'James P.'
+ last_name: 'Sullivan'
+ email: 'sully@monstersinc.com'
+ status_id: 1
+mike1:
+ first_name: 'Mike'
+ last_name: 'Wazowski'
+ email: 'mike1@monstersinc.com'
+ status_id: 1
+mike2:
+ first_name: 'Mike'
+ last_name: 'Wazowski'
+ email: 'mike2@monstersinc.com'
+ status_id: 1
+mike3:
+ first_name: 'Mike'
+ last_name: 'Wazowski'
+ email: 'mike3@monstersinc.com'
+ status_id: 1
+mike4:
+ first_name: 'Mike'
+ last_name: 'Wazowski'
+ email: 'mike4@monstersinc.com'
+ status_id: 1
+mike5:
+ first_name: 'Mike'
+ last_name: 'Wazowski'
+ email: 'mike5@monstersinc.com'
+ status_id: 1
+mike6:
+ first_name: 'Mike'
+ last_name: 'Wazowski'
+ email: 'mike6@monstersinc.com'
+ status_id: 1
