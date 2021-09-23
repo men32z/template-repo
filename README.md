@@ -70,6 +70,7 @@ rspec
 ## todo
 - remove unused branches.
 - on UserLoader::Microverse service url and headers could come from db, env or params.
+- improve user_loader tests, due to mock json is big.
 
 ## Upcoming Features?
 - authentication with roles.

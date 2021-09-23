@@ -44,6 +44,7 @@ module UserLoader
     rescue StandardError => e
       # TODO: log this into the database with other usefull info maybe?
       puts "An error of type #{e.class} happened, message is #{e.message}"
+      []
     end
   end
 end
