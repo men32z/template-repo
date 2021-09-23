@@ -24,6 +24,9 @@ first, this will load an empty page. after that you can run the worker.
 worker will run on the page [https://men32z-template-repo.herokuapp.com/test](https://men32z-template-repo.herokuapp.com/test)
 - this will only run once, will implement something to refresh later. see Upcoming Features? section below.
 
+json responses has the suffix api
+[https://men32z-template-repo.herokuapp.com/api/users](https://men32z-template-repo.herokuapp.com/api/users)
+
 
 
 ## Local Install
@@ -108,3 +111,9 @@ Feel free to check the [issues page](https://github.com/men32z/template-repo/iss
 ### Credits
 
 Template and idea by Microverse.
+
+
+### message to the reviewer
+I would like to make more fancy stuff on the code, but due to my job I have coded more in Laravel and NodeJS lately instead of Rails. If you decide to move on with my application me I'll dig depth into the ruby on rails qualities and subtleties.
+
+I consider myself a Language-agnostic programmer and I consider I could take this to the next level with more time focused on Rails.
