@@ -19,9 +19,10 @@
 
 run the
 [Live Demo Link](https://men32z-template-repo.herokuapp.com/users)
-first, this will load an empty page. after that you can run the worker.
+first, this will load the users page so you can see is empty. after that you can run the worker.
 
 worker will run on the page [https://men32z-template-repo.herokuapp.com/test](https://men32z-template-repo.herokuapp.com/test)
+now you will be able to see on the users page all the users that were loaded by the worker.
 - this will only run once, will implement something to refresh later. see Upcoming Features? section below.
 
 json responses has the suffix api
@@ -40,7 +41,7 @@ json responses has the suffix api
 2. Get in to the folder app
 
 ```
-cd learning-tracker-app
+cd template-repo
 ```
 3. Prepare rails environment
 
@@ -87,7 +88,6 @@ rspec
 ## todo
 - remove unused branches.
 - on UserLoader::Microverse service url and headers could come from db, env or params.
-- improve user_loader tests, due to mock json is big.
 
 ## Upcoming Features?
 - authentication with roles.
